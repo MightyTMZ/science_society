@@ -1,6 +1,6 @@
 import React from "react";
 import AppBanner from "@/components/Banner/Banner";
-import BioBanner from "../../../public/departmentBannerImages/biology_banner.jpg";
+import BioBanner from "../../../public/departmentBannerImages/biology.webp";
 import styles from "./Biology.module.css";
 
 const Biology = () => {

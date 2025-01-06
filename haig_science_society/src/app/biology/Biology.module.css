@@ -1,3 +1,5 @@
 .banner {
-  background-image: url("../../../public/departmentBannerImages/biology_banner.jpg");
+  background-image: url("../../../public/departmentBannerImages/biology.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
