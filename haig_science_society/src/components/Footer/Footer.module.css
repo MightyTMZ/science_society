@@ -1,0 +1,37 @@
+.footer {
+  background-color: #1a1a1a; /* Dark background */
+  color: #f5f5f5; /* Light text color */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Spacing between links */
+  align-items: center;
+}
+
+.footerLink {
+  display: flex;
+  align-items: center;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #ff6347; /* Highlight color on hover (e.g., Tomato) */
+}
+
+.icon {
+  margin-right: 8px; /* Space between the icon and text */
+  font-size: 1.5rem;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  font-size: 12px;
+}

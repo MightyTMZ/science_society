@@ -1,0 +1,6 @@
+.banner {
+  background-image: url("../../../public/departmentBannerImages/engineering.jpg");
+  background-size: cover;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}

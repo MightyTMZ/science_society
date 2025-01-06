@@ -1,0 +1,5 @@
+.banner {
+  background-image: url("../../../public/departmentBannerImages/physics.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
