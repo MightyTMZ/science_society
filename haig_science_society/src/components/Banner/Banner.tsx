@@ -1,18 +1,27 @@
-import React from 'react'
-import styles from "./Banner.module.css"
+import React from "react";
+import { StaticImageData } from "next/image";
+import styles from "./Banner.module.css";
 
 interface BannerProps {
-    title: string;
-    imageURL: string;
+  title: string;
+  imageURL: StaticImageData;
 }
 
-
-const Banner = () => {
+const AppBanner = ({ title, imageURL }: BannerProps) => {
   return (
-    <div >
-      
+    <div
+      className={styles.banner}
+      style={{
+        backgroundImage: `url(${imageURL})`,
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {title}
     </div>
-  )
-}
+  );
+};
 
-export default Banner
+export default AppBanner;

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Bebas_Neue } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -21,6 +21,13 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
+const bebas_neue = Bebas_Neue({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-bebas-neue",
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Earl Haig Science Society",
   description: "A description of Earl Haig Science Society goes here",
@@ -34,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${bebas_neue.variable} antialiased`}
       >
         <NavBar />
 
