@@ -17,41 +17,51 @@ const afilliatedOrganizations = [
 
 const LandingPageBanner = () => {
   return (
-    <div className={styles.banner}>
-      <div className={styles.EarlHaig}>Earl Haig</div>
-      <div className={styles.ScienceSociety}>Science Society</div>
-      <div className={styles.scienceDepartments}>
-        {departments.map((department, index) => (
-          <React.Fragment key={department.id}>
-            <Link
-              href={department.reference}
-              className={styles.departmentSubLink}
-            >
-              {department.title}
-            </Link>
-            {index < departments.length - 1 && (
-              <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-            )}
-          </React.Fragment>
-        ))}
-      </div>
-      <div className={styles.affiliatedOrganizations}>
-        {afilliatedOrganizations.map((department, index) => (
-          <React.Fragment key={department.id}>
-            <Link
-              href={department.reference}
-              className={styles.departmentSubLink}
-            >
-              {department.title}
-            </Link>
-            {index < afilliatedOrganizations.length - 1 && (
-              <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-            )}
-          </React.Fragment>
-        ))}
-      </div>
-      <p className={styles.creditLine}>Website created by <i>Engineering Department of Earl Haig Science Society</i></p>
-    </div>
+    <>
+      <div className={styles.banner}>
+        <div className={styles.EarlHaig}>Earl Haig</div>
+        <div className={styles.ScienceSociety}>Science Society</div>
+        <div className={styles.scienceDepartments}>
+          {departments.map((department, index) => (
+            <React.Fragment key={department.id}>
+              <Link
+                href={department.reference}
+                className={styles.departmentSubLink}
+              >
+                {department.title}
+              </Link>
+              {index < departments.length - 1 && (
+                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+        <div className={styles.affiliatedOrganizations}>
+          {afilliatedOrganizations.map((department, index) => (
+            <React.Fragment key={department.id}>
+              <Link
+                href={department.reference}
+                className={styles.departmentSubLink}
+              >
+                {department.title}
+              </Link>
+              {index < afilliatedOrganizations.length - 1 && (
+                <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+      </div>{" "}
+      <p className={styles.creditLine}>
+        Website created by{" "}
+        <i>
+          <strong className={styles.customEngineeringLink}>
+            <Link href="/engineering">Engineering Department</Link>
+          </strong>{" "}
+          of Earl Haig Science Society
+        </i>
+      </p>
+    </>
   );
 };
 

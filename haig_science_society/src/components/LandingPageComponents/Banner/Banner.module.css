@@ -83,4 +83,11 @@
 
 .creditLine {
   color: grey;
+  justify-self: center;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.customEngineeringLink:hover {
+  text-decoration: underline;
 }
