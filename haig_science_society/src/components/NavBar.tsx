@@ -7,6 +7,8 @@ import { MdOutlineScience } from "react-icons/md";
 import { MdEngineering } from "react-icons/md";
 import { MdOutlineBiotech } from "react-icons/md";
 import { FcBiotech } from "react-icons/fc";
+import { GiCatapult } from "react-icons/gi";
+import { GiNuclearBomb } from "react-icons/gi";
 
 import Link from "next/link";
 import { SlChemistry } from "react-icons/sl";
@@ -33,8 +35,10 @@ const NavBar = () => {
         >
           <GiMaterialsScience />
           <MdOutlineScience />
+          <GiCatapult />
           <MdEngineering />
           <MdOutlineBiotech />
+          <GiNuclearBomb />
           <FcBiotech />
           <SlChemistry />
         </Link>
