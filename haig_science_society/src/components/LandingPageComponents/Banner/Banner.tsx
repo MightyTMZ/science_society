@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Banner.module.css";
 import Link from "next/link"; // Import Link for navigation
-import landingPageBanner from "../../../../public/departmentBannerImages/scientific_exploration_background_800_wht.jpg";
+// import landingPageBanner from "../../../../public/departmentBannerImages/scientific_exploration_background_800_wht.jpg";
 
 const departments = [
   { id: 1, title: "biology", reference: "/biology" },
@@ -50,6 +50,7 @@ const LandingPageBanner = () => {
           </React.Fragment>
         ))}
       </div>
+      <p className={styles.creditLine}>Website created by <i>Engineering Department of Earl Haig Science Society</i></p>
     </div>
   );
 };

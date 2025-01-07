@@ -4,3 +4,26 @@
   background-position-y: bottom;
   background-repeat: no-repeat;
 }
+
+.calendarContainer {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.calendarHeading {
+  text-transform: capitalize;
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.calendarHeading:hover {
+  text-transform: lowercase;
+  color: grey;
+  font-weight: normal;
+  transition: 0.3s;
+}

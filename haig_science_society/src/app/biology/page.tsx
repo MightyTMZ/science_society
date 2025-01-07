@@ -1,57 +1,13 @@
 import React from "react";
 import AppBanner from "@/components/Banner/Banner";
 import BioBanner from "../../../public/departmentBannerImages/biology.webp";
-import square from "../../../public/square.png";
 import Slideshow from "@/components/Slideshow/Slideshow";
+import Calendar from "@/components/Calendar/Calendar";
+import { slides } from "./biologyEvents";
 import styles from "./Biology.module.css";
 
 const Biology = () => {
   const departmentName = "biology";
-
-  const slides = [
-    {
-      image: square,
-      title: "Explore the Ocean",
-      description:
-        "Dive into the mysteries of the deep blue sea and discover marine life.",
-    },
-    {
-      image: square,
-      title: "Mountain Adventures",
-      description:
-        "Feel the thrill of climbing the world's most breathtaking peaks.",
-    },
-    {
-      image: square,
-      title: "Cityscapes",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
-    },
-    {
-      image: square,
-      title: "Cityscapes",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
-    },
-    {
-      image: square,
-      title: "Cityscapes",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
-    },
-    {
-      image: square,
-      title: "Cityscapes",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
-    },
-    {
-      image: square,
-      title: "Cityscapes",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
-    },
-  ];
 
   return (
     <div>
@@ -61,6 +17,10 @@ const Biology = () => {
 
       <div className={styles.announcementsContainer + "container lg"}>
         <Slideshow title="Announcements" slides={slides} />
+      </div>
+      <div className={styles.calendarContainer}>
+        <h1 className={styles.calendarHeading}>{departmentName} department calendar</h1>
+        <Calendar department={departmentName} />
       </div>
     </div>
   );
