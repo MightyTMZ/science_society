@@ -73,11 +73,31 @@
   }
 
   .scienceDepartments {
-    font-size: 1.2rem;
+    font-size: 16px;
   }
 
   .affiliatedOrganizations {
-    font-size: 1.2rem;
+    font-size: 16px;
+  }
+  .ScienceSociety {
+    font-size: 68px;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .banner {
+    height: 300px;
+  }
+
+  .scienceDepartments {
+    font-size: 14px;
+  }
+
+  .affiliatedOrganizations {
+    font-size: 14px;
+  }
+  .ScienceSociety {
+    font-size: 60px;
   }
 }
 

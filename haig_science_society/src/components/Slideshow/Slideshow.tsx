@@ -42,7 +42,7 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
     .concat(slides.slice(0, Math.max(0, currentSlide + 3 - slides.length)));
 
   return (
-    <div className={styles.slideshowContainer}>
+    <div className={`${styles.slideshowContainer} mb-6`}>
       {title ? (
         <h1
           className={styles.slideTitle}
@@ -80,7 +80,7 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
         &#10095;
       </button>
 
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center", marginTop: "16px" }}>
         {slides.map((_, index) => (
           <span
             key={index}

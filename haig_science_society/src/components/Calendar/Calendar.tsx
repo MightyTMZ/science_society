@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Calendar.module.css";
 
 /*
   Biology = "Biology",
@@ -13,6 +14,9 @@ interface CalendarProps {
   department: string;
 }
 
+
+
+
 const Calendar = ({ department }: CalendarProps) => {
   switch (department) {
     case "biology":
@@ -20,8 +24,10 @@ const Calendar = ({ department }: CalendarProps) => {
       return (
         <div>
           <iframe
+            className={styles.calendar}
             src="https://calendar.google.com/calendar/embed?src=8920471b28575cc1e306491d9b28d8f3ceec8b364ba109146aba0dd7761d772b%40group.calendar.google.com&ctz=America%2FToronto"
-            style={{ border: 0 }}
+            
+            
             width={800}
             height={600}
           ></iframe>
@@ -32,6 +38,7 @@ const Calendar = ({ department }: CalendarProps) => {
       return (
         <div>
           <iframe
+            className={styles.calendar}
             src="https://calendar.google.com/calendar/embed?src=8920471b28575cc1e306491d9b28d8f3ceec8b364ba109146aba0dd7761d772b%40group.calendar.google.com&ctz=America%2FToronto"
             style={{ border: 0 }}
             width={800}
@@ -44,6 +51,7 @@ const Calendar = ({ department }: CalendarProps) => {
       return (
         <div>
           <iframe
+            className={styles.calendar}
             src="https://calendar.google.com/calendar/embed?src=8920471b28575cc1e306491d9b28d8f3ceec8b364ba109146aba0dd7761d772b%40group.calendar.google.com&ctz=America%2FToronto"
             style={{ border: 0 }}
             width={800}
@@ -56,6 +64,7 @@ const Calendar = ({ department }: CalendarProps) => {
       return (
         <div>
           <iframe
+            className={styles.calendar}
             src="https://calendar.google.com/calendar/embed?src=8920471b28575cc1e306491d9b28d8f3ceec8b364ba109146aba0dd7761d772b%40group.calendar.google.com&ctz=America%2FToronto"
             style={{ border: 0 }}
             width={800}
@@ -67,6 +76,7 @@ const Calendar = ({ department }: CalendarProps) => {
       return (
         <div>
           <iframe
+            className={styles.calendar}
             src="https://calendar.google.com/calendar/embed?src=8920471b28575cc1e306491d9b28d8f3ceec8b364ba109146aba0dd7761d772b%40group.calendar.google.com&ctz=America%2FToronto"
             style={{ border: 0 }}
             width={800}
@@ -78,6 +88,7 @@ const Calendar = ({ department }: CalendarProps) => {
       return (
         <div>
           <iframe
+            className={styles.calendar}
             src="https://calendar.google.com/calendar/embed?src=8920471b28575cc1e306491d9b28d8f3ceec8b364ba109146aba0dd7761d772b%40group.calendar.google.com&ctz=America%2FToronto"
             style={{ border: 0 }}
             width={800}
@@ -89,6 +100,7 @@ const Calendar = ({ department }: CalendarProps) => {
       return (
         <div>
           <iframe
+            className={styles.calendar}
             src="https://calendar.google.com/calendar/embed?src=8920471b28575cc1e306491d9b28d8f3ceec8b364ba109146aba0dd7761d772b%40group.calendar.google.com&ctz=America%2FToronto"
             style={{ border: 0 }}
             width={800}
