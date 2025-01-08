@@ -32,6 +32,8 @@
   font-weight: thin;
   color: black;
   text-transform: uppercase;
+  animation: fade-in 0.4s ease-out forwards;
+
 }
 
 .ScienceSociety {
@@ -42,6 +44,19 @@
   color: rgb(53, 53, 53);
   font-weight: 900;
   line-height: 70px;
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .scienceDepartments {
@@ -51,6 +66,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   color: rgb(54, 54, 54);
+  animation: fade-in 1.2s ease-out forwards;
+
 }
 
 .departmentSubLink:hover {
@@ -64,6 +81,7 @@
   color: rgb(54, 54, 54);
   font-size: 1.5rem;
   display: flex;
+  animation: fade-in 1.2s ease-out forwards;
   flex-direction: row;
 }
 
