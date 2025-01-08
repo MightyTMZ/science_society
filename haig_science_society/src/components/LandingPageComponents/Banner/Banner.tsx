@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Banner.module.css";
 import Link from "next/link"; // Import Link for navigation
+import ScienceButton from "@/components/ScienceButton/ScienceButton";
 // import landingPageBanner from "../../../../public/departmentBannerImages/scientific_exploration_background_800_wht.jpg";
 
 const departments = [
@@ -51,6 +52,12 @@ const LandingPageBanner = () => {
             </React.Fragment>
           ))}
         </div>
+        <ScienceButton
+          buttonText="Join our Google Classroom"
+          link={
+            "https://l.instagram.com/?u=https%3A%2F%2Fclassroom.google.com%2Fc%2FNjIzNDMwMDYwNjM3%3Fcjc%3Dqfz72fa&e=AT2wWNnBLWHiLAnkODvPQaDy6ZdSqV_TY2D3v5AOwhlq6JrTwNY6LiJVMp3VsQLiQ1eAKD1-82HSnAf0ZqJnbTVIekdIkgbA5M-g31M"
+          }
+        />
       </div>{" "}
       <p className={styles.creditLine}>
         Website created by{" "}

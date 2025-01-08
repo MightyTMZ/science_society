@@ -31,7 +31,7 @@ const bebas_neue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: "Earl Haig Science Society",
-  description: "A description of Earl Haig Science Society goes here",
+  description: "Here for Earl Haig STEM Opportunities, Labs, & Contest Help🥼🔬",
 };
 
 export default function RootLayout({
