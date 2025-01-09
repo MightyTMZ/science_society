@@ -54,9 +54,7 @@ const LandingPageBanner = () => {
         </div>
         <ScienceButton
           buttonText="Join our Google Classroom"
-          link={
-            "https://l.instagram.com/?u=https%3A%2F%2Fclassroom.google.com%2Fc%2FNjIzNDMwMDYwNjM3%3Fcjc%3Dqfz72fa&e=AT2wWNnBLWHiLAnkODvPQaDy6ZdSqV_TY2D3v5AOwhlq6JrTwNY6LiJVMp3VsQLiQ1eAKD1-82HSnAf0ZqJnbTVIekdIkgbA5M-g31M"
-          }
+          link={"https://classroom.google.com/c/NjIzNDMwMDYwNjM3?cjc=qfz72fa"}
         />
       </div>{" "}
       <p className={styles.creditLine}>
