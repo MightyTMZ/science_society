@@ -4,7 +4,6 @@ import { Geist, Geist_Mono, Bebas_Neue } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import SciSocLogo from "../../public/sci_soc_logo.jpg";
 import Footer from "@/components/Footer/Footer";
 
 const geistSans = Geist({
