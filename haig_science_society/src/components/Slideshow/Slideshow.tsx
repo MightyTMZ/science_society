@@ -5,7 +5,6 @@ import styles from "./Slideshow.module.css";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 import EventModal from "../EventModal/EventModal";
-import { FcInfo } from "react-icons/fc";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface Slide {

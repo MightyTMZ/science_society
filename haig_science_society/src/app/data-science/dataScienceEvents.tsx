@@ -3,7 +3,7 @@
 import square from "../../../public/square.png";
 import { Event } from "@/types/Event";
 
-const dsEvents = [
+const dsEvents: Event[] = [
   {
     image: square,
     title: "Data science event",
