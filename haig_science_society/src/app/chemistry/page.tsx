@@ -4,7 +4,7 @@ import ChemBanner from "../../../public/departmentBannerImages/chemistry.webp";
 import styles from "./Chemistry.module.css";
 import Calendar from "@/components/Calendar/Calendar";
 import Slideshow from "@/components/Slideshow/Slideshow";
-import { slides } from "./chemistryEvents";
+import slides from "./chemistryEvents";
 
 const Chemistry = () => {
   const departmentName = "chemistry";

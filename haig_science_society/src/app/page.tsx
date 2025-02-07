@@ -2,87 +2,73 @@ import React from "react";
 import LandingPageBanner from "@/components/LandingPageComponents/Banner/Banner";
 import Slideshow from "@/components/Slideshow/Slideshow";
 import square from "../../public/square.png";
+import { Event } from "@/types/Event";
 
 const Home = () => {
   const slides = [
     {
       image: square,
-      title: "Explore the Ocean",
-      startTime: "11:40 AM",
-      endTime: "12:30 PM",
-      location: "Room 353",
-      date: "2025-02-05",
-      status: "In Progress",
-      description:
-        "Dive into the mysteries of the deep blue sea and discover marine life. Dive into the mysteries of the deep blue sea and discover marine life. Dive into the mysteries of the deep blue sea and discover marine life. Dive into the mysteries of the deep blue sea and discover marine life.",
+      title: "Sample event",
+      date: "2025-02-03",
+      startTime: "18:00",
+      endTime: "20:00",
+      location: "Earl Haig Secondary School",
+      description: "It is an awesome event and we hope to see you all there",
+      status: "Upcoming" as "Upcoming",
     },
     {
       image: square,
-      title: "Mountain Adventures",
-      startTime: "11:40 AM",
-      endTime: "12:30 PM",
-      location: "Room 353",
-      date: "2025-02-05",
-      status: "In Progress",
-      description:
-        "Feel the thrill of climbing the world's most breathtaking peaks.",
+      title: "Sample event",
+      date: "2025-02-10",
+      startTime: "18:00",
+      endTime: "20:00",
+      location: "Earl Haig Secondary School",
+      description: "It is an awesome event and we hope to see you all there",
+      status: "Upcoming" as "Upcoming",
     },
     {
       image: square,
-      title: "Cityscapes",
-      startTime: "11:40 AM",
-      endTime: "12:30 PM",
-      location: "Room 353",
-      date: "2025-02-05",
-      status: "In Progress",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
+      title: "Sample event",
+      date: "2025-02-10",
+      startTime: "18:00",
+      endTime: "20:00",
+      location: "Earl Haig Secondary School",
+      description: "It is an awesome event and we hope to see you all there",
+      status: "Upcoming" as "Upcoming",
     },
     {
       image: square,
-      title: "Cityscapes",
-      startTime: "11:40 AM",
-      endTime: "12:30 PM",
-      location: "Room 353",
-      date: "2025-02-05",
-      status: "In Progress",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
-    },
-    {
-      image: square,
-      title: "Cityscapes",
-      startTime: "11:40 AM",
-      endTime: "12:30 PM",
-      location: "Room 353",
-      date: "2025-02-05",
-      status: "In Progress",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
-    },
-    {
-      image: square,
-      title: "Cityscapes",
-      startTime: "11:40 AM",
-      endTime: "12:30 PM",
-      location: "Room 353",
-      date: "2025-02-05",
-      status: "In Progress",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
-    },
-    {
-      image: square,
-      title: "Cityscapes",
-      startTime: "11:40 AM",
-      endTime: "12:30 PM",
-      location: "Room 353",
-      date: "2025-02-05",
-      status: "In Progress",
-      description:
-        "Experience the vibrant life and culture of urban landscapes.",
+      title: "Sample event",
+      date: "2025-02-10",
+      startTime: "18:00",
+      endTime: "20:00",
+      location: "Earl Haig Secondary School",
+      description: "It is an awesome event and we hope to see you all there",
+      status: "Upcoming" as "Upcoming",
     },
   ];
+
+  // void function
+  const updateEventStatus = () => {
+    const now = new Date(); // Current time in UTC
+    const options = { timeZone: "America/Toronto" };
+    const currentTime = new Date(now.toLocaleString("en-US", options));
+
+    slides.forEach((event: Event) => {
+      const eventStart = new Date(`${event.date}T${event.startTime}:00-05:00`); // Toronto is UTC-5 (or UTC-4 in DST)
+      const eventEnd = new Date(`${event.date}T${event.endTime}:00-05:00`);
+
+      if (currentTime < eventStart) {
+        event.status = "Upcoming";
+      } else if (currentTime >= eventStart && currentTime <= eventEnd) {
+        event.status = "In Progress";
+      } else {
+        event.status = "Past";
+      }
+    });
+  };
+
+  updateEventStatus();
 
   return (
     <div>

@@ -4,7 +4,7 @@ import engBanner from "../../../public/departmentBannerImages/scientific_explora
 import styles from "./DS.module.css";
 import Calendar from "@/components/Calendar/Calendar";
 import Slideshow from "@/components/Slideshow/Slideshow";
-import { slides } from "./dataScienceEvents";
+import slides from "./dataScienceEvents";
 
 const DataScience = () => {
   const departmentName = "data science";

@@ -16,15 +16,6 @@ interface EventModalProps {
   status: "Upcoming" | "In Progress" | "Past";
 }
 
-const formatDateForICS = (date: string, time: string) => {
-  return (
-    new Date(`${date}T${time}:00`)
-      .toISOString()
-      .replace(/[-:]/g, "")
-      .split(".")[0] + "Z"
-  );
-};
-
 const EventModal = ({
   isOpen,
   onClose,
@@ -69,21 +60,91 @@ const EventModal = ({
 
   //   const notionCalendarUrl = "https://notion.so"; // Placeholder; Notion requires API integration
 
-  const addToGoogleCalendar = () => {
-    console.log("Google Calendar: added!");
+  const generateGoogleCalendarUrl = (event: EventModalProps) => {
+    const startDate = new Date(`${event.date}T${event.startTime}`);
+    const endDate = new Date(`${event.date}T${event.endTime}`);
+
+    const params = new URLSearchParams({
+      action: "TEMPLATE",
+      text: event.title,
+      details: event.description,
+      location: event.location,
+      dates: `${startDate.toISOString().replace(/-|:|\.\d+/g, "")}/${endDate
+        .toISOString()
+        .replace(/-|:|\.\d+/g, "")}`,
+    });
+
+    return `https://calendar.google.com/calendar/render?${params.toString()}`;
   };
 
-  const addToIcloudCalendar = () => {
-    console.log("iCloud Calendar: added!");
+  const generateOutlookCalendarUrl = (event: EventModalProps) => {
+    const startDate = new Date(`${event.date}T${event.startTime}`);
+    const endDate = new Date(`${event.date}T${event.endTime}`);
+
+    const params = new URLSearchParams({
+      rru: "addevent",
+      subject: event.title,
+      body: event.description,
+      location: event.location,
+      startdt: startDate.toISOString(),
+      enddt: endDate.toISOString(),
+    });
+
+    return `https://outlook.live.com/calendar/0/deeplink/compose?${params.toString()}`;
   };
 
-  const addToOutlookCalendar = () => {
-    console.log("Microsoft Outlook Calendar: added!");
+  const generateIcsFileContent = (event: EventModalProps) => {
+    const startDate = new Date(`${event.date}T${event.startTime}`);
+    const endDate = new Date(`${event.date}T${event.endTime}`);
+
+    return `BEGIN:VCALENDAR
+  VERSION:2.0
+  BEGIN:VEVENT
+  SUMMARY:${event.title}
+  DESCRIPTION:${event.description}
+  LOCATION:${event.location}
+  DTSTART:${startDate.toISOString().replace(/-|:|\.\d+/g, "")}
+  DTEND:${endDate.toISOString().replace(/-|:|\.\d+/g, "")}
+  END:VEVENT
+  END:VCALENDAR`;
   };
 
-  const addToNotion = () => {
-    console.log("Notion: added!");
+  const downloadIcsFile = (event: EventModalProps) => {
+    const icsContent = generateIcsFileContent(event);
+    const blob = new Blob([icsContent], {
+      type: "text/calendar;charset=utf-8",
+    });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = `${event.title.toLowerCase().replace(/\s+/g, "-")}.ics`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
+
+  const googleCalendarUrl = generateGoogleCalendarUrl({
+    isOpen,
+    onClose,
+    title,
+    date,
+    startTime,
+    endTime,
+    location,
+    description,
+    status,
+  });
+
+  const outlookCalendarUrl = generateOutlookCalendarUrl({
+    isOpen,
+    onClose,
+    title,
+    date,
+    startTime,
+    endTime,
+    location,
+    description,
+    status,
+  });
 
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
@@ -111,46 +172,60 @@ const EventModal = ({
 
         {/* Add to Calendar Buttons */}
         <div className={styles.buttonContainer}>
-          <div
+          <Link
+            href={googleCalendarUrl}
+            target="_blank"
             rel="noopener noreferrer"
-            className={`${styles.calendarButton}`}
-            onClick={addToGoogleCalendar}
+            className={styles.calendarButton}
           >
             <span style={{ display: "inline-flex" }}>
               Add to Google Calendar&nbsp;&nbsp;&nbsp;&nbsp;
               <img src="/googleCalender.png" style={{ height: "25px" }} />
             </span>
-          </div>
+          </Link>
           <div
-            rel="noopener noreferrer"
-            className={`${styles.calendarButton} `}
-            onClick={addToIcloudCalendar}
+            className={styles.calendarButton}
+            onClick={() =>
+              downloadIcsFile({
+                isOpen,
+                onClose,
+                title,
+                date,
+                startTime,
+                endTime,
+                location,
+                description,
+                status,
+              })
+            }
           >
             <span style={{ display: "inline-flex" }}>
               Add to iCloud Calendar&nbsp;&nbsp;&nbsp;&nbsp;
               <img src="/appleCalendar.png" style={{ height: "25px" }} />
             </span>
           </div>
-          <div
+          <Link
+            href={outlookCalendarUrl}
+            target="_blank"
             rel="noopener noreferrer"
-            className={`${styles.calendarButton}`}
-            onClick={addToOutlookCalendar}
+            className={styles.calendarButton}
           >
             <span style={{ display: "inline-flex" }}>
               Add to Outlook Calendar&nbsp;&nbsp;&nbsp;&nbsp;
               <img src="/microsoftCalendar.png" style={{ height: "25px" }} />
             </span>
-          </div>
-          <div
+          </Link>
+          <Link
+            href="https://notion.so"
+            target="_blank"
             rel="noopener noreferrer"
-            className={`${styles.calendarButton} `}
-            onClick={addToNotion}
+            className={styles.calendarButton}
           >
             <span style={{ display: "inline-flex" }}>
               Add to Notion &nbsp;&nbsp;&nbsp;&nbsp;
               <img src="/notion.png" style={{ height: "25px" }} />
             </span>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

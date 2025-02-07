@@ -4,7 +4,7 @@ import engBanner from "../../../public/departmentBannerImages/engineering.avif";
 import styles from "./Engineering.module.css";
 import Calendar from "@/components/Calendar/Calendar";
 import Slideshow from "@/components/Slideshow/Slideshow";
-import { slides } from "./engineeringDepartmentSlides";
+import slides from "./engineeringDepartmentSlides";
 
 const Engineering = () => {
   const departmentName = "engineering";
