@@ -16,7 +16,7 @@ const DataScience = () => {
       </div>
 
       <div className={styles.announcementsContainer + "container lg"}>
-        <Slideshow title="Announcements" slides={slides} />
+        <Slideshow title="Events" slides={slides} />
       </div>
       <div className={styles.calendarContainer}>
         <h1 className={styles.calendarHeading}>

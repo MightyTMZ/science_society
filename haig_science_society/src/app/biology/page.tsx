@@ -3,7 +3,7 @@ import AppBanner from "@/components/Banner/Banner";
 import BioBanner from "../../../public/departmentBannerImages/biology.webp";
 import Slideshow from "@/components/Slideshow/Slideshow";
 import Calendar from "@/components/Calendar/Calendar";
-import slides from "./biologyEvents";
+import biologyEvents from "./biologyEvents";
 import styles from "./Biology.module.css";
 
 const Biology = () => {
@@ -16,7 +16,7 @@ const Biology = () => {
       </div>
 
       <div className={styles.announcementsContainer + "container lg"}>
-        <Slideshow title="Announcements" slides={slides} />
+        <Slideshow title="Events" slides={biologyEvents} />
       </div>
       <div className={styles.calendarContainer}>
         <h1 className={styles.calendarHeading}>

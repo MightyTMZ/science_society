@@ -65,8 +65,13 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
       year: "numeric",
       month: "long",
       day: "numeric",
+      timeZone: "Asia/Kolkata",
     };
-    return date.toLocaleDateString("en-US", options);
+
+    const formattedDate = new Intl.DateTimeFormat("en-US", options).format(
+      date
+    );
+    return formattedDate;
   }
 
   return (

@@ -3,7 +3,7 @@
 import square from "../../../public/square.png";
 import { Event } from "@/types/Event";
 
-const slides = [
+const engineeringEvents = [
   {
     image: square,
     title: "Engineering event",
@@ -82,7 +82,7 @@ const updateEventStatus = () => {
   const options = { timeZone: "America/Toronto" };
   const currentTime = new Date(now.toLocaleString("en-US", options));
 
-  slides.forEach((event: Event) => {
+  engineeringEvents.forEach((event: Event) => {
     const eventStart = new Date(`${event.date}T${event.startTime}:00-05:00`); // Toronto is UTC-5 (or UTC-4 in DST)
     const eventEnd = new Date(`${event.date}T${event.endTime}:00-05:00`);
 
@@ -98,4 +98,4 @@ const updateEventStatus = () => {
 
 updateEventStatus();
 
-export default slides;
+export default engineeringEvents;

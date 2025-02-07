@@ -3,50 +3,22 @@ import LandingPageBanner from "@/components/LandingPageComponents/Banner/Banner"
 import Slideshow from "@/components/Slideshow/Slideshow";
 import square from "../../public/square.png";
 import { Event } from "@/types/Event";
+import bioEvents from "./biology/biologyEvents";
+import chemEvents from "./chemistry/chemistryEvents";
+import wisEvents from "./women-in-stem/WISEvents";
+import physicsEvents from "./physics/physicsDepartmentEvents";
+import engineeringEvents from "./engineering/engineeringDepartmentSlides";
+import dsEvents from "./data-science/dataScienceEvents";
 
 const Home = () => {
-  const slides = [
-    {
-      image: square,
-      title: "Sample event",
-      date: "2025-02-03",
-      startTime: "18:00",
-      endTime: "20:00",
-      location: "Earl Haig Secondary School",
-      description: "It is an awesome event and we hope to see you all there",
-      status: "Upcoming" as "Upcoming",
-    },
-    {
-      image: square,
-      title: "Sample event",
-      date: "2025-02-10",
-      startTime: "18:00",
-      endTime: "20:00",
-      location: "Earl Haig Secondary School",
-      description: "It is an awesome event and we hope to see you all there",
-      status: "Upcoming" as "Upcoming",
-    },
-    {
-      image: square,
-      title: "Sample event",
-      date: "2025-02-10",
-      startTime: "18:00",
-      endTime: "20:00",
-      location: "Earl Haig Secondary School",
-      description: "It is an awesome event and we hope to see you all there",
-      status: "Upcoming" as "Upcoming",
-    },
-    {
-      image: square,
-      title: "Sample event",
-      date: "2025-02-10",
-      startTime: "18:00",
-      endTime: "20:00",
-      location: "Earl Haig Secondary School",
-      description: "It is an awesome event and we hope to see you all there",
-      status: "Upcoming" as "Upcoming",
-    },
-  ];
+  const slides = bioEvents
+    .concat(chemEvents)
+    .concat(wisEvents)
+    .concat(physicsEvents)
+    .concat(engineeringEvents)
+    .concat(dsEvents);
+
+  slides.sort((d) => Date.now() - Date.parse(d.date));
 
   // void function
   const updateEventStatus = () => {
