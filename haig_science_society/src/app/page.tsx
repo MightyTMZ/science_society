@@ -11,10 +11,10 @@ const Home = () => {
       startTime: "11:40 AM",
       endTime: "12:30 PM",
       location: "Room 353",
-      date: "2025-",
+      date: "2025-02-05",
       status: "In Progress",
       description:
-        "Dive into the mysteries of the deep blue sea and discover marine life.",
+        "Dive into the mysteries of the deep blue sea and discover marine life. Dive into the mysteries of the deep blue sea and discover marine life. Dive into the mysteries of the deep blue sea and discover marine life. Dive into the mysteries of the deep blue sea and discover marine life.",
     },
     {
       image: square,
@@ -22,7 +22,7 @@ const Home = () => {
       startTime: "11:40 AM",
       endTime: "12:30 PM",
       location: "Room 353",
-      date: "2025-",
+      date: "2025-02-05",
       status: "In Progress",
       description:
         "Feel the thrill of climbing the world's most breathtaking peaks.",
@@ -33,7 +33,7 @@ const Home = () => {
       startTime: "11:40 AM",
       endTime: "12:30 PM",
       location: "Room 353",
-      date: "2025-",
+      date: "2025-02-05",
       status: "In Progress",
       description:
         "Experience the vibrant life and culture of urban landscapes.",
@@ -44,7 +44,7 @@ const Home = () => {
       startTime: "11:40 AM",
       endTime: "12:30 PM",
       location: "Room 353",
-      date: "2025-",
+      date: "2025-02-05",
       status: "In Progress",
       description:
         "Experience the vibrant life and culture of urban landscapes.",
@@ -55,7 +55,7 @@ const Home = () => {
       startTime: "11:40 AM",
       endTime: "12:30 PM",
       location: "Room 353",
-      date: "2025-",
+      date: "2025-02-05",
       status: "In Progress",
       description:
         "Experience the vibrant life and culture of urban landscapes.",
@@ -66,7 +66,7 @@ const Home = () => {
       startTime: "11:40 AM",
       endTime: "12:30 PM",
       location: "Room 353",
-      date: "2025-",
+      date: "2025-02-05",
       status: "In Progress",
       description:
         "Experience the vibrant life and culture of urban landscapes.",
@@ -77,7 +77,7 @@ const Home = () => {
       startTime: "11:40 AM",
       endTime: "12:30 PM",
       location: "Room 353",
-      date: "2025-",
+      date: "2025-02-05",
       status: "In Progress",
       description:
         "Experience the vibrant life and culture of urban landscapes.",

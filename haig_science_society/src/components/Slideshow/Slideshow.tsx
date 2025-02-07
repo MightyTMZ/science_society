@@ -72,10 +72,13 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
             />
             <div className={styles.slideContent}>
               <h2 className={styles.slideTitle}>{slide.title}</h2>
-              <p className={styles.slideDescription}>{slide.description}</p>
+              <p className={styles.slideDescription}>
+                {slide.description.slice(0, 50)}...
+              </p>
               <button
                 className={styles.detailsButton}
                 onClick={() => openModal(slide)}
+                style={{ marginTop: "2rem" }}
               >
                 View Details
               </button>
