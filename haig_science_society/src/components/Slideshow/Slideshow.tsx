@@ -4,11 +4,17 @@ import React, { useState, useEffect } from "react";
 import styles from "./Slideshow.module.css";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
+import EventModal from "../EventModal/EventModal";
 
 interface Slide {
   image: StaticImageData;
   title: string;
+  date: string;
+  startTime: string;
+  endTime: string;
+  location: string;
   description: string;
+  status: "Upcoming" | "In Progress" | "Past";
 }
 
 interface SlideshowProps {
@@ -18,6 +24,7 @@ interface SlideshowProps {
 
 const Slideshow = ({ title, slides }: SlideshowProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [selectedSlide, setSelectedSlide] = useState<Slide | null>(null);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -29,6 +36,14 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
+  };
+
+  const openModal = (slide: Slide) => {
+    setSelectedSlide(slide);
+  };
+
+  const closeModal = () => {
+    setSelectedSlide(null);
   };
 
   useEffect(() => {
@@ -43,23 +58,13 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
 
   return (
     <div className={`${styles.slideshowContainer} mb-6`}>
-      {title ? (
-        <h1
-          className={styles.slideTitle}
-          style={{
-            fontSize: "2rem",
-          }}
-        >
-          {title}
-        </h1>
-      ) : (
-        <></>
-      )}
+      {title && <h1 className={styles.slideTitle}>{title}</h1>}
+
       <div className={styles.slidesWrapper}>
         {visibleSlides.map((slide, index) => (
           <div key={index} className={styles.slide}>
             <Image
-              src={slide.image.src}
+              src={slide.image}
               alt={slide.title}
               className={styles.slideImage}
               width={300}
@@ -68,6 +73,12 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
             <div className={styles.slideContent}>
               <h2 className={styles.slideTitle}>{slide.title}</h2>
               <p className={styles.slideDescription}>{slide.description}</p>
+              <button
+                className={styles.detailsButton}
+                onClick={() => openModal(slide)}
+              >
+                View Details
+              </button>
             </div>
           </div>
         ))}
@@ -91,6 +102,14 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
           ></span>
         ))}
       </div>
+
+      {selectedSlide && (
+        <EventModal
+          isOpen={!!selectedSlide}
+          onClose={closeModal}
+          {...selectedSlide}
+        />
+      )}
     </div>
   );
 };
