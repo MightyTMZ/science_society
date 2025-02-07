@@ -122,3 +122,17 @@
     padding: 10px;
   }
 }
+
+.detailsButton {
+  background: #ebdcdc;
+  padding: 10px;
+  border-radius: 20px;
+  color: grey;
+  transition: background 0.5s, border-radius 0.5s, color 0.5s;
+}
+
+.detailsButton:hover {
+  background: #7b7a7a;
+  border-radius: 0;
+  color: white;
+}

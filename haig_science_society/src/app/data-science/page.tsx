@@ -4,7 +4,7 @@ import engBanner from "../../../public/departmentBannerImages/scientific_explora
 import styles from "./DS.module.css";
 import Calendar from "@/components/Calendar/Calendar";
 import Slideshow from "@/components/Slideshow/Slideshow";
-import { slides } from "./dataScienceEvents";
+import slides from "./dataScienceEvents";
 
 const DataScience = () => {
   const departmentName = "data science";
@@ -16,7 +16,7 @@ const DataScience = () => {
       </div>
 
       <div className={styles.announcementsContainer + "container lg"}>
-        <Slideshow title="Announcements" slides={slides} />
+        <Slideshow title="Events" slides={slides} />
       </div>
       <div className={styles.calendarContainer}>
         <h1 className={styles.calendarHeading}>

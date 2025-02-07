@@ -4,7 +4,7 @@ import engBanner from "../../../public/departmentBannerImages/scientific_explora
 import styles from "./WIS.module.css";
 import Calendar from "@/components/Calendar/Calendar";
 import Slideshow from "@/components/Slideshow/Slideshow";
-import { slides } from "./WISEvents";
+import slides from "./WISEvents";
 
 const WomenInSTEM = () => {
   const departmentName = "women in STEM";
@@ -16,7 +16,7 @@ const WomenInSTEM = () => {
       </div>
 
       <div className={styles.announcementsContainer + "container lg"}>
-        <Slideshow title="Announcements" slides={slides} />
+        <Slideshow title="Events" slides={slides} />
       </div>
       <div className={styles.calendarContainer}>
         <h1 className={styles.calendarHeading}>

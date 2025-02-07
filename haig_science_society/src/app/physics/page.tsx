@@ -4,7 +4,7 @@ import physicsBanner from "../../../public/departmentBannerImages/physics.jpg";
 import styles from "./Physics.module.css";
 import Calendar from "@/components/Calendar/Calendar";
 import Slideshow from "@/components/Slideshow/Slideshow";
-import { slides } from "./physicsDepartmentEvents";
+import slides from "./physicsDepartmentEvents";
 
 const Physics = () => {
   const departmentName = "physics";
@@ -16,7 +16,7 @@ const Physics = () => {
       </div>
 
       <div className={styles.announcementsContainer + "container lg"}>
-        <Slideshow title="Announcements" slides={slides} />
+        <Slideshow title="Events" slides={slides} />
       </div>
       <div className={styles.calendarContainer}>
         <h1 className={styles.calendarHeading}>
