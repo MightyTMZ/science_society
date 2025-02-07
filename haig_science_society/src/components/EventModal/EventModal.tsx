@@ -16,7 +16,7 @@ interface EventModalProps {
   endTime: string;
   location: string;
   description: string;
-  status: "Upcoming" | "In Progress" | "Past";
+  status: string;
 }
 
 const EventModal = ({

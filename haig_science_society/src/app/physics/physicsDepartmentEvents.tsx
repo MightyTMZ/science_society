@@ -12,7 +12,7 @@ const physicsEvents: Event[] = [
     endTime: "20:00",
     location: "Earl Haig Secondary School",
     description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming" as "Upcoming",
+    status: "Upcoming",
   },
   {
     image: square,
@@ -22,7 +22,7 @@ const physicsEvents: Event[] = [
     endTime: "20:00",
     location: "Earl Haig Secondary School",
     description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming" as "Upcoming",
+    status: "Upcoming",
   },
   {
     image: square,
@@ -32,7 +32,7 @@ const physicsEvents: Event[] = [
     endTime: "20:00",
     location: "Earl Haig Secondary School",
     description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming" as "Upcoming",
+    status: "Upcoming",
   },
   {
     image: square,
@@ -42,7 +42,7 @@ const physicsEvents: Event[] = [
     endTime: "20:00",
     location: "Earl Haig Secondary School",
     description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming" as "Upcoming",
+    status: "Upcoming",
   },
   {
     image: square,
@@ -52,7 +52,7 @@ const physicsEvents: Event[] = [
     endTime: "20:00",
     location: "Earl Haig Secondary School",
     description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming" as "Upcoming",
+    status: "Upcoming",
   },
   {
     image: square,
@@ -62,7 +62,7 @@ const physicsEvents: Event[] = [
     endTime: "20:00",
     location: "Earl Haig Secondary School",
     description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming" as "Upcoming",
+    status: "Upcoming",
   },
   {
     image: square,
@@ -72,7 +72,7 @@ const physicsEvents: Event[] = [
     endTime: "20:00",
     location: "Earl Haig Secondary School",
     description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming" as "Upcoming",
+    status: "Upcoming",
   },
 ];
 
@@ -87,7 +87,7 @@ const updateEventStatus = () => {
     const eventEnd = new Date(`${event.date}T${event.endTime}:00-05:00`);
 
     if (currentTime < eventStart) {
-      event.status = "Upcoming" as "Upcoming";
+      event.status = "Upcoming";
     } else if (currentTime >= eventStart && currentTime <= eventEnd) {
       event.status = "In Progress";
     } else {
