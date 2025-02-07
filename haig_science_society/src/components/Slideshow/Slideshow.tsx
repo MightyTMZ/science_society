@@ -6,6 +6,7 @@ import { StaticImageData } from "next/image";
 import Image from "next/image";
 import EventModal from "../EventModal/EventModal";
 import { FcInfo } from "react-icons/fc";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface Slide {
   image: StaticImageData;
@@ -98,7 +99,7 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
               >
                 <span style={{ display: "inline-flex" }}>
                   {" "}
-                  View Details <FcInfo />
+                  View Details &nbsp; <FaExternalLinkAlt />
                 </span>
               </button>
             </div>

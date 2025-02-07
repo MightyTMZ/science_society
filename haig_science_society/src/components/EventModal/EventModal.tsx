@@ -194,7 +194,7 @@ const EventModal = ({
           {location}
         </p>
         <p >
-          <strong style={{ display: "block" }}>Description:</strong>
+          <strong style={{ display: "block" }}>Description</strong>
           {description}
         </p>
         <br />
