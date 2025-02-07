@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./EventModal.module.css";
 import Link from "next/link"; // better for Google Calendar
+import { MdOutlineDateRange } from "react-icons/md";
+import { IoTime } from "react-icons/io5";
+import { FaSearchLocation } from "react-icons/fa";
 // mix up both using divs and next/link
 // for links, make sure the target="_blank"
 
@@ -146,6 +149,17 @@ const EventModal = ({
     status,
   });
 
+  function formatDate(dateString: string) {
+    const date = new Date(dateString); // Convert the string to a Date object
+
+    const options: Intl.DateTimeFormatOptions = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    return date.toLocaleDateString("en-US", options);
+  }
+
   return (
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
@@ -153,19 +167,37 @@ const EventModal = ({
           &times;
         </span>
 
-        <h2>{title}</h2>
+        <h2 className={styles.eventTitle}>{title}</h2>
+        <br />
         <p>
-          <strong>Date:</strong> {date}
+          <strong className={styles.eventAttribute}>
+            Date &nbsp;
+            <MdOutlineDateRange />
+            &nbsp;
+          </strong>{" "}
+          {formatDate(date)}
         </p>
         <p>
-          <strong>Time:</strong> {startTime} - {endTime}
+          <strong className={styles.eventAttribute}>
+            Time &nbsp;
+            <IoTime />
+            &nbsp;
+          </strong>{" "}
+          {startTime} - {endTime}
         </p>
         <p>
-          <strong>Location:</strong> {location}
+          <strong className={styles.eventAttribute}>
+            Location &nbsp;
+            <FaSearchLocation />
+            &nbsp;
+          </strong>{" "}
+          {location}
         </p>
-        <p>
-          <strong>Description:</strong> {description}
+        <p >
+          <strong style={{ display: "block" }}>Description:</strong>
+          {description}
         </p>
+        <br />
         <p className={`${styles.status} ${styles[status.toLowerCase()]}`}>
           {status}
         </p>

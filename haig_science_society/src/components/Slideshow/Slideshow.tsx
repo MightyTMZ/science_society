@@ -5,6 +5,7 @@ import styles from "./Slideshow.module.css";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 import EventModal from "../EventModal/EventModal";
+import { FcInfo } from "react-icons/fc";
 
 interface Slide {
   image: StaticImageData;
@@ -56,6 +57,17 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
     .slice(currentSlide, currentSlide + 3)
     .concat(slides.slice(0, Math.max(0, currentSlide + 3 - slides.length)));
 
+  function formatDate(dateString: string) {
+    const date = new Date(dateString); // Convert the string to a Date object
+
+    const options: Intl.DateTimeFormatOptions = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    return date.toLocaleDateString("en-US", options);
+  }
+
   return (
     <div className={`${styles.slideshowContainer} mb-6`}>
       {title && <h1 className={styles.slideTitle}>{title}</h1>}
@@ -75,12 +87,19 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
               <p className={styles.slideDescription}>
                 {slide.description.slice(0, 50)}...
               </p>
+              <br />
+              <p className={styles.slideDescription}>
+                {formatDate(slide.date)}
+              </p>
               <button
                 className={styles.detailsButton}
                 onClick={() => openModal(slide)}
                 style={{ marginTop: "2rem" }}
               >
-                View Details
+                <span style={{ display: "inline-flex" }}>
+                  {" "}
+                  View Details <FcInfo />
+                </span>
               </button>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-export type Event {
+export type Event = {
     image: StaticImageData;
     title: string;
     date: string;

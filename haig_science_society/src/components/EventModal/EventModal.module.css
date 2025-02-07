@@ -13,15 +13,15 @@
 }
 
 .modalContent {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 500px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  width: 550px;
   max-width: 90%;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
   text-align: left;
   position: relative;
-  transform: scale(0.8);
+  transform: scale(0.9);
   opacity: 0;
   animation: popUp 0.3s forwards;
 }
@@ -37,11 +37,24 @@
   }
 }
 
+.eventTitle {
+  font-size: 24px;
+}
+
+.eventTitle:hover {
+  font-weight: bold;
+}
+
+.eventAttribute {
+  display: inline-flex;
+  margin: 10px 0;
+}
+
 .closeButton {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
   color: #333;
 }
@@ -52,51 +65,50 @@
 
 .status {
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 50px;
   display: inline-block;
+  font-size: 1.1em;
+  margin-top: 10px;
 }
 
 .upcoming {
-  background: green;
+  background: #34d399;
   color: white;
 }
 
 .inprogress {
-  background: orange;
+  background: #f59e0b;
   color: white;
 }
 
 .past {
-  background: gray;
+  background: #d1d5db;
   color: white;
 }
 
 /* Calendar Buttons */
 .buttonContainer {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .calendarButton {
   display: block;
   width: 100%;
   text-align: center;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: normal;
   color: black;
   transition: background 0.3s ease-in-out;
   border: 1px solid grey;
-  border-radius: 8px;
 }
 
 .calendarButton:hover {
-    background: black;
-    color: white;
-
-
+  background: black;
+  color: white;
 }
