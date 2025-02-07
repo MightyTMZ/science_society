@@ -1,7 +1,7 @@
 import React from "react";
 import LandingPageBanner from "@/components/LandingPageComponents/Banner/Banner";
 import Slideshow from "@/components/Slideshow/Slideshow";
-import square from "../../public/square.png";
+// import square from "../../public/square.png";
 import { Event } from "@/types/Event";
 import bioEvents from "./biology/biologyEvents";
 import chemEvents from "./chemistry/chemistryEvents";
