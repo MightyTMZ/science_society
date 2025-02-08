@@ -86,6 +86,7 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
               className={styles.slideImage}
               width={300}
               height={300}
+              onClick={() => openModal(slide)}
             />
             <div className={styles.slideContent}>
               <h2 className={styles.slideTitle}>{slide.title}</h2>
