@@ -5,6 +5,7 @@ import NavBar from "@/components/NavBar";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${bebas_neue.variable} antialiased`}
       >
+        <Analytics />
         <NavBar />
 
         <main>{children}</main>
