@@ -7,9 +7,9 @@ const engineeringEvents: Event[] = [
   {
     image: square,
     title: "Engineering event",
-    date: "2025-02-04",
+    date: "2025-02-10",
     startTime: "18:00",
-    endTime: "20:00",
+    endTime: "21:00",
     location: "Earl Haig Secondary School",
     description: "It is an awesome event and we hope to see you all there",
     status: "Upcoming",
