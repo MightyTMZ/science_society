@@ -1,82 +1,14 @@
 // for storing all biology events
 
-import square from "../../../public/square.png";
+// import square from "../../../public/square.png";
 import { Event } from "@/types/Event";
 
 const dsEvents: Event[] = [
-  {
-    image: square,
-    title: "Data science event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Data science event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Data science event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Data science event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Data science event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Data science event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Data science event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
+  
 ];
 
 // void function
+/* 
 const updateEventStatus = () => {
   const now = new Date(); // Current time in UTC
   const options = { timeZone: "America/Toronto" };
@@ -96,6 +28,6 @@ const updateEventStatus = () => {
   });
 };
 
-updateEventStatus();
+updateEventStatus();*/
 
 export default dsEvents;

@@ -1,82 +1,52 @@
 // for storing all biology events
 
 import square from "../../../public/square.png";
+import tsf from "../../../public/tsf.png";
 import { Event } from "@/types/Event";
 
 const engineeringEvents: Event[] = [
   {
-    image: square,
-    title: "Engineering event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "21:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
+    image: tsf,
+    title: "Engineering: Toronto Science Fair (TSF) Information Meeting",
+    date: "2025-02-13",
+    startTime: "11:40",
+    endTime: "12:25",
+    location: "Room 256",
+    description: `
+    Learn about the upcoming Toronto Science Fair (TSF) and how you can participate in it to win 
+    medals, scholarships, special awards and even a chance to go to the Canada Wide Science Fair (CWSF)
+    `,
     status: "Upcoming",
   },
   {
     image: square,
-    title: "Engineering event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
+    title: "Engineering: Weekly Meeting",
+    date: "2025-02-20",
+    startTime: "11:40",
+    endTime: "12:25",
+    location: "Room 256",
+    description: `
+    1st preparation session for Toronto Science Fair (TSF) competitors.
+    `,
     status: "Upcoming",
   },
+
   {
     image: square,
-    title: "Engineering event",
+    title: "Executive Meeting",
     date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Engineering event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Engineering event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Engineering event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Engineering event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
+    startTime: "11:40",
+    endTime: "12:30",
+    location: "Room 353",
+    description: `
+    All department heads will meet...
+    `,
     status: "Upcoming",
   },
 ];
 
 // void function
+/* 
 const updateEventStatus = () => {
   const now = new Date(); // Current time in UTC
   const options = { timeZone: "America/Toronto" };
@@ -96,6 +66,6 @@ const updateEventStatus = () => {
   });
 };
 
-updateEventStatus();
+updateEventStatus();*/
 
 export default engineeringEvents;

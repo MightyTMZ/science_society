@@ -6,77 +6,18 @@ import { Event } from "@/types/Event";
 const bioEvents: Event[] = [
   {
     image: square,
-    title: "Biology event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Biology event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Biology event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Biology event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Biology event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Biology event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Biology event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
+    title: "Biology: Weekly Meeting",
+    date: "2025-02-14",
+    startTime: "15:15",
+    endTime: "16:00",
+    location: "Dr. William's room",
     description: "It is an awesome event and we hope to see you all there",
     status: "Upcoming",
   },
 ];
 
 // void function
+/* 
 const updateEventStatus = () => {
   const now = new Date(); // Current time in UTC
   const options = { timeZone: "America/Toronto" };
@@ -96,6 +37,6 @@ const updateEventStatus = () => {
   });
 };
 
-updateEventStatus();
+updateEventStatus();*/
 
 export default bioEvents;

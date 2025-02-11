@@ -6,77 +6,28 @@ import { Event } from "@/types/Event";
 const chemEvents: Event[] = [
   {
     image: square,
-    title: "Chemistry event",
+    title: "Chemistry: Weekly Meeting",
     date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
+    startTime: "11:40",
+    endTime: "12:20",
+    location: "Ms. Bell's room",
     description: "It is an awesome event and we hope to see you all there",
     status: "Upcoming",
   },
   {
     image: square,
-    title: "Chemistry event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Chemistry event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Chemistry event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Chemistry event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Chemistry event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
-    description: "It is an awesome event and we hope to see you all there",
-    status: "Upcoming",
-  },
-  {
-    image: square,
-    title: "Chemistry event",
-    date: "2025-02-10",
-    startTime: "18:00",
-    endTime: "20:00",
-    location: "Earl Haig Secondary School",
+    title: "Chemistry: Weekly Meeting",
+    date: "2025-02-17",
+    startTime: "11:40",
+    endTime: "12:20",
+    location: "Ms. Bell's room",
     description: "It is an awesome event and we hope to see you all there",
     status: "Upcoming",
   },
 ];
 
 // void function
+/* 
 const updateEventStatus = () => {
   const now = new Date(); // Current time in UTC
   const options = { timeZone: "America/Toronto" };
@@ -96,6 +47,6 @@ const updateEventStatus = () => {
   });
 };
 
-updateEventStatus();
+updateEventStatus();*/
 
 export default chemEvents;

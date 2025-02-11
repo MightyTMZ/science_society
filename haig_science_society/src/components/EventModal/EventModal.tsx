@@ -171,7 +171,6 @@ const EventModal = ({
         <span className={styles.closeButton} onClick={onClose}>
           &times;
         </span>
-
         <h2 className={styles.eventTitle}>{title}</h2>
         <br />
         <p>
@@ -202,11 +201,20 @@ const EventModal = ({
           <strong style={{ display: "block" }}>Description</strong>
           {description}
         </p>
-        <br />
-        <p className={`${styles.status} ${styles[status.toLowerCase()]}`}>
-          {status}
-        </p>
-
+        <br />{" "}
+        {status == "In Progress" ? (
+          <>
+            <p className={`${styles.statusInProgress} ${styles[status.toLowerCase()]}`}>
+              {status}
+            </p>
+          </>
+        ) : (
+          <>
+            <p className={`${styles.status} ${styles[status.toLowerCase()]}`}>
+              {status}
+            </p>
+          </>
+        )}
         {/* Add to Calendar Buttons */}
         <div className={styles.buttonContainer}>
           <Link
