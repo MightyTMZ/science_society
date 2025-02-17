@@ -2,13 +2,10 @@
 
 import React, { useState } from "react";
 import { departments } from "./departments";
-import { GiMaterialsScience } from "react-icons/gi";
 import { MdOutlineScience } from "react-icons/md";
 import { MdEngineering } from "react-icons/md";
-import { MdOutlineBiotech } from "react-icons/md";
 import { FcBiotech } from "react-icons/fc";
 import { GiCatapult } from "react-icons/gi";
-import { GiNuclearBomb } from "react-icons/gi";
 
 import Link from "next/link";
 import { SlChemistry } from "react-icons/sl";
@@ -33,14 +30,10 @@ const NavBar = () => {
             fontSize: "32px",
           }}
         >
-          <GiMaterialsScience />
           <MdOutlineScience />
           <GiCatapult />
           <MdEngineering />
-          <MdOutlineBiotech />
-          <GiNuclearBomb />
           <FcBiotech />
-          <SlChemistry />
         </Link>
 
         {/* Hamburger Menu */}
