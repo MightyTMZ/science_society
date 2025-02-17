@@ -1,17 +1,67 @@
 // for storing all biology events
 
-import square from "../../../public/square.png";
+import square from "../../../public/physics_square.png";
 import { Event } from "@/types/Event";
 
 const physicsEvents: Event[] = [
   {
     image: square,
     title: "Physics: Weekly Meeting",
-    date: "2025-02-12",
-    startTime: "11:40",
+    date: "2025-02-19",
+    startTime: "11:50",
     endTime: "12:20",
     location: "Room 353",
-    description: "It is an awesome event and we hope to see you all there",
+    description: "",
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "Physics: Weekly Meeting",
+    date: "2025-02-26",
+    startTime: "11:50",
+    endTime: "12:20",
+    location: "Room 353",
+    description: "",
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "Physics: Weekly Meeting",
+    date: "2025-03-05",
+    startTime: "11:50",
+    endTime: "12:20",
+    location: "Room 353",
+    description: "",
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "Physics: Weekly Meeting",
+    date: "2025-03-12",
+    startTime: "11:50",
+    endTime: "12:20",
+    location: "Room 353",
+    description: "",
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "Physics: Weekly Meeting",
+    date: "2025-03-19",
+    startTime: "11:50",
+    endTime: "12:20",
+    location: "Room 353",
+    description: "",
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "Physics: Weekly Meeting",
+    date: "2025-03-26",
+    startTime: "11:50",
+    endTime: "12:20",
+    location: "Room 353",
+    description: "",
     status: "Upcoming",
   },
 ];

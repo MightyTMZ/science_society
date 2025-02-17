@@ -1,27 +1,51 @@
 // for storing all biology events
 
-import square from "../../../public/square.png";
+import square from "../../../public/chemistry_square.png";
 import { Event } from "@/types/Event";
 
 const chemEvents: Event[] = [
   {
     image: square,
     title: "Chemistry: Weekly Meeting",
-    date: "2025-02-10",
+    date: "2025-02-24",
     startTime: "11:40",
-    endTime: "12:20",
-    location: "Ms. Bell's room",
-    description: "It is an awesome event and we hope to see you all there",
+    endTime: "12:30",
+    location: "Room 350",
+    description:
+      "Prepare for chemistry contests, explore chemistry applications, and have fun learning chemistry!",
     status: "Upcoming",
   },
   {
     image: square,
     title: "Chemistry: Weekly Meeting",
-    date: "2025-02-17",
+    date: "2025-03-03",
     startTime: "11:40",
-    endTime: "12:20",
-    location: "Ms. Bell's room",
-    description: "It is an awesome event and we hope to see you all there",
+    endTime: "12:30",
+    location: "Room 350",
+    description:
+      "Prepare for chemistry contests, explore chemistry applications, and have fun learning chemistry!",
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "Chemistry: Weekly Meeting",
+    date: "2025-03-10",
+    startTime: "11:40",
+    endTime: "12:30",
+    location: "Room 350",
+    description:
+      "Prepare for chemistry contests, explore chemistry applications, and have fun learning chemistry!",
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "Chemistry: Weekly Meeting",
+    date: "2025-03-24",
+    startTime: "11:40",
+    endTime: "12:30",
+    location: "Room 350",
+    description:
+      "Prepare for chemistry contests, explore chemistry applications, and have fun learning chemistry!",
     status: "Upcoming",
   },
 ];

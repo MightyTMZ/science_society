@@ -1,27 +1,91 @@
 // for storing all biology events
 
-import square from "../../../public/square.png";
+import square from "../../../public/hosa.png";
 import { Event } from "@/types/Event";
 
 const bioEvents: Event[] = [
   {
     image: square,
-    title: "Example in progress",
-    date: "2025-02-11",
-    startTime: "08:15",
-    endTime: "16:00",
-    location: "Dr. William's room",
-    description: "It is an awesome event and we hope to see you all there",
+    title: "HOSA Dental Science",
+    date: "2025-02-21",
+    startTime: "11:40",
+    endTime: "12:40",
+    location: "Room 342",
+    description: `
+    Dental Science provides members with the opportunity to gain knowledge and skills
+required for dental careers. This event aims to inspire members to learn more about careers in
+the dental field. 
+    `,
     status: "Upcoming",
   },
   {
     image: square,
-    title: "Biology: Weekly Meeting",
-    date: "2025-02-14",
-    startTime: "15:15",
-    endTime: "16:00",
-    location: "Dr. William's room",
-    description: "It is an awesome event and we hope to see you all there",
+    title: "HOSA Dental Science",
+    date: "2025-02-28",
+    startTime: "11:40",
+    endTime: "12:40",
+    location: "Room 342",
+    description: `
+    Dental Science provides members with the opportunity to gain knowledge and skills
+required for dental careers. This event aims to inspire members to learn more about careers in
+the dental field. 
+    `,
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "HOSA Dental Science",
+    date: "2025-03-07",
+    startTime: "11:40",
+    endTime: "12:40",
+    location: "Room 342",
+    description: `
+    Dental Science provides members with the opportunity to gain knowledge and skills
+required for dental careers. This event aims to inspire members to learn more about careers in
+the dental field. 
+    `,
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "HOSA Dental Science",
+    date: "2025-03-14",
+    startTime: "11:40",
+    endTime: "12:40",
+    location: "Room 342",
+    description: `
+    Dental Science provides members with the opportunity to gain knowledge and skills
+required for dental careers. This event aims to inspire members to learn more about careers in
+the dental field. 
+    `,
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "HOSA Dental Science",
+    date: "2025-03-21",
+    startTime: "11:40",
+    endTime: "12:40",
+    location: "Room 342",
+    description: `
+    Dental Science provides members with the opportunity to gain knowledge and skills
+required for dental careers. This event aims to inspire members to learn more about careers in
+the dental field. 
+    `,
+    status: "Upcoming",
+  },
+  {
+    image: square,
+    title: "HOSA Dental Science",
+    date: "2025-03-28",
+    startTime: "11:40",
+    endTime: "12:40",
+    location: "Room 342",
+    description: `
+    Dental Science provides members with the opportunity to gain knowledge and skills
+required for dental careers. This event aims to inspire members to learn more about careers in
+the dental field. 
+    `,
     status: "Upcoming",
   },
 ];
