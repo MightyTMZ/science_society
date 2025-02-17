@@ -6,6 +6,16 @@ import { Event } from "@/types/Event";
 const bioEvents: Event[] = [
   {
     image: square,
+    title: "Example in progress",
+    date: "2025-02-11",
+    startTime: "08:15",
+    endTime: "16:00",
+    location: "Dr. William's room",
+    description: "It is an awesome event and we hope to see you all there",
+    status: "Upcoming",
+  },
+  {
+    image: square,
     title: "Biology: Weekly Meeting",
     date: "2025-02-14",
     startTime: "15:15",

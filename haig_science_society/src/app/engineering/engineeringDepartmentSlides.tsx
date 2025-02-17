@@ -34,7 +34,7 @@ const engineeringEvents: Event[] = [
   {
     image: square,
     title: "Executive Meeting",
-    date: "2025-02-10",
+    date: "2025-02-11",
     startTime: "11:40",
     endTime: "12:30",
     location: "Room 353",
