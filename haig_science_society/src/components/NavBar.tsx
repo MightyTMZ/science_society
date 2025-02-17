@@ -6,9 +6,7 @@ import { MdOutlineScience } from "react-icons/md";
 import { MdEngineering } from "react-icons/md";
 import { FcBiotech } from "react-icons/fc";
 import { GiCatapult } from "react-icons/gi";
-
 import Link from "next/link";
-import { SlChemistry } from "react-icons/sl";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
