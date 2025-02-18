@@ -7,13 +7,14 @@ import Slideshow from "@/components/Slideshow/Slideshow";
 import slides from "./WISEvents";
 
 const WomenInSTEM = () => {
-  const departmentName = "women in STEM";
+  const departmentName = "Women in STEM (WiSTEM)";
 
   return (
     <div>
       <div className={styles.banner}>
         <AppBanner title={departmentName} imageURL={engBanner} />
       </div>
+      <p className="mt-4 ml-4"><strong>Weekly Meeting</strong>: Bi-weekly (every two weeks) Fridays at Lunch (11:40-12:40) in room 253</p>
 
       <div className={styles.announcementsContainer + "container lg"}>
         <Slideshow title="Events" slides={slides} />

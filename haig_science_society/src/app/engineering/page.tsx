@@ -14,6 +14,10 @@ const Engineering = () => {
       <div className={styles.banner}>
         <AppBanner title={departmentName} imageURL={engBanner} />
       </div>
+      <p className="mt-4 ml-4">
+        <strong>Weekly Meeting</strong>: Thursdays at Lunch (11:40-12:40) in
+        room 256
+      </p>
 
       <div className={styles.announcementsContainer + "container lg"}>
         <Slideshow title="Events" slides={slides} />

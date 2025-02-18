@@ -4,7 +4,7 @@ import square from "../../../public/engineering_square.png";
 import { Event } from "@/types/Event";
 
 const engineeringEvents: Event[] = [
-  {
+  /*{
     image: square,
     title: "Engineering: Weekly Meeting",
     date: "2025-02-20",
@@ -75,7 +75,7 @@ const engineeringEvents: Event[] = [
     
     `,
     status: "Upcoming",
-  },
+  },*/
 
 ];
 
