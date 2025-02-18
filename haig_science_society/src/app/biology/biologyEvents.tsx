@@ -4,7 +4,7 @@ import square from "../../../public/hosa.png";
 import { Event } from "@/types/Event";
 
 const bioEvents: Event[] = [
-  {
+  /*{
     image: square,
     title: "HOSA Dental Science",
     date: "2025-02-21",
@@ -87,7 +87,7 @@ required for dental careers. This event aims to inspire members to learn more ab
 the dental field. 
     `,
     status: "Upcoming",
-  },
+  },*/
 ];
 
 // void function

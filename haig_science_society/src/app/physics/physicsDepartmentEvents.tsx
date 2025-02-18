@@ -4,7 +4,7 @@ import square from "../../../public/physics_square.png";
 import { Event } from "@/types/Event";
 
 const physicsEvents: Event[] = [
-  {
+  /*{
     image: square,
     title: "Physics: Weekly Meeting",
     date: "2025-02-19",
@@ -63,7 +63,7 @@ const physicsEvents: Event[] = [
     location: "Room 353",
     description: "",
     status: "Upcoming",
-  },
+  },*/
 ];
 
 // void function

@@ -4,7 +4,7 @@ import square from "../../../public/WiSTEM.png";
 import { Event } from "@/types/Event";
 
 const wisEvents: Event[] = [
-  {
+  /*{
     image: square,
     title: "Women in STEM Bi-Weekly Meeting",
     date: "2025-02-21",
@@ -93,7 +93,7 @@ const wisEvents: Event[] = [
     location: "Room 253",
     description: "Bi-weekly meeting of Women In STEM (WiSTEM), an organization on a mission to fight gender inequality in STEM by empowering and encouraging teens to get engaged with the sciences.",
     status: "Upcoming",
-  },
+  },*/
 ];
 
 // void function
