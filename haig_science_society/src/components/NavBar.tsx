@@ -2,11 +2,12 @@
 
 import React, { useState } from "react";
 import { departments } from "./departments";
-import { MdOutlineScience } from "react-icons/md";
+import { MdHome, MdOutlineScience } from "react-icons/md";
 import { MdEngineering } from "react-icons/md";
 import { FcBiotech } from "react-icons/fc";
 import { GiCatapult } from "react-icons/gi";
 import Link from "next/link";
+import { FaDna } from "react-icons/fa";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,8 +20,7 @@ const NavBar = () => {
     <nav className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Brand Logo */}
-        <Link
-          href="/"
+        <div
           className="text-xl font-bold text-gray-800"
           style={{
             display: "flex",
@@ -28,11 +28,12 @@ const NavBar = () => {
             fontSize: "32px",
           }}
         >
-          <MdOutlineScience />
-          <GiCatapult />
-          <MdEngineering />
-          <FcBiotech />
-        </Link>
+          <Link href="/" className="px-5 "><MdHome /></Link>
+          <Link href="/chemistry" className="px-5 "><MdOutlineScience /></Link>
+          <Link href="/physics" className="px-5 "><GiCatapult /></Link>
+          <Link href="/engineering" className="px-5 "><MdEngineering /></Link>
+          <Link href="/biology" className="px-5 "><FaDna /></Link>
+        </div>
 
         {/* Hamburger Menu */}
         <button
