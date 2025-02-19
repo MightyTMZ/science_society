@@ -1,6 +1,6 @@
 // for storing all biology events
 
-import square from "../../../public/hosa.png";
+// import square from "../../../public/hosa.png";
 import { Event } from "@/types/Event";
 
 const bioEvents: Event[] = [

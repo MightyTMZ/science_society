@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { departments } from "./departments";
 import { MdHome, MdOutlineScience } from "react-icons/md";
 import { MdEngineering } from "react-icons/md";
-import { FcBiotech } from "react-icons/fc";
 import { GiCatapult } from "react-icons/gi";
 import Link from "next/link";
 import { FaDna } from "react-icons/fa";
