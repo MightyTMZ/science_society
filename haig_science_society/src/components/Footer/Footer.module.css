@@ -35,3 +35,8 @@
   margin-top: 20px;
   font-size: 12px;
 }
+
+.externalPortfolio:hover {
+  color: red;
+  transition: color 0.5s;
+}

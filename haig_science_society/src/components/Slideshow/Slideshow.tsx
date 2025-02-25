@@ -26,6 +26,7 @@ interface SlideshowProps {
 const Slideshow = ({ title, slides }: SlideshowProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedSlide, setSelectedSlide] = useState<Slide | null>(null);
+  const [paused, setPaused] = useState(false);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -48,14 +49,30 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000); // Auto-slide every 5 seconds
-    return () => clearInterval(timer); // Cleanup interval on unmount
+    if (!paused) {
+      const timer = setInterval(nextSlide, 5000); // Auto-slide every 5 seconds
+      return () => clearInterval(timer);
+    }
+    // Cleanup interval on unmount
   }, [currentSlide]);
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Create visible slides
   const visibleSlides = slides
-    .slice(currentSlide, currentSlide + 3)
-    .concat(slides.slice(0, Math.max(0, currentSlide + 3 - slides.length)));
+    .slice(currentSlide, currentSlide + (isMobile ? 1 : 3))
+    .concat(
+      slides.slice(
+        0,
+        Math.max(0, currentSlide + (isMobile ? 1 : 3) - slides.length)
+      )
+    );
 
   function formatDate(dateString: string) {
     const date = new Date(dateString); // Convert the string to a Date object
@@ -77,7 +94,11 @@ const Slideshow = ({ title, slides }: SlideshowProps) => {
     <div className={`${styles.slideshowContainer} mb-6`}>
       {title && <h1 className={styles.slideTitle}>{title}</h1>}
 
-      <div className={styles.slidesWrapper}>
+      <div
+        className={styles.slidesWrapper}
+        onMouseOver={() => setPaused(true)}
+        onMouseOut={() => setPaused(false)}
+      >
         {visibleSlides.map((slide, index) => (
           <div key={index} className={styles.slide}>
             <Image
