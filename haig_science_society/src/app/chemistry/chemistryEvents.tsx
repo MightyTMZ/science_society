@@ -1,10 +1,10 @@
 // for storing all biology events
 
-import square from "../../../public/chemistry_square.png";
+// import square from "../../../public/chemistry_square.png";
 import { Event } from "@/types/Event";
 
 const chemEvents: Event[] = [
-  {
+  /*{
     image: square,
     title: "Chemistry: Weekly Meeting",
     date: "2025-02-24",
@@ -47,7 +47,7 @@ const chemEvents: Event[] = [
     description:
       "Prepare for chemistry contests, explore chemistry applications, and have fun learning chemistry!",
     status: "Upcoming",
-  },
+  },*/
 ];
 
 // void function

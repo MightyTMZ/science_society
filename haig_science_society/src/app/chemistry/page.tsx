@@ -5,6 +5,7 @@ import styles from "./Chemistry.module.css";
 import Calendar from "@/components/Calendar/Calendar";
 import Slideshow from "@/components/Slideshow/Slideshow";
 import slides from "./chemistryEvents";
+import ClassroomCopyCode from "@/components/ClassroomCopyCode/ClassroomCopyCode";
 
 const Chemistry = () => {
   const departmentName = "chemistry";
@@ -15,7 +16,16 @@ const Chemistry = () => {
         <AppBanner title={departmentName} imageURL={ChemBanner} />
       </div>
 
-      <p className="mt-4 ml-4"><strong>Weekly Meeting</strong>: Mondays at Lunch (11:40-12:40) in room 350</p>
+      <p
+        className="mt-4 ml-4"
+        style={{
+          fontSize: "24px",
+        }}
+      >
+        <strong>Weekly Meeting</strong>: Mondays at Lunch (11:40-12:40) in room
+        350
+        <ClassroomCopyCode code="VHVRAZR" />
+      </p>
       <div className={styles.announcementsContainer + "container lg"}>
         <Slideshow title="Events" slides={slides} />
       </div>

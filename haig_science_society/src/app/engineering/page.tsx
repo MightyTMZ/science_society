@@ -5,6 +5,7 @@ import styles from "./Engineering.module.css";
 import Calendar from "@/components/Calendar/Calendar";
 import Slideshow from "@/components/Slideshow/Slideshow";
 import slides from "./engineeringDepartmentSlides";
+import ClassroomCopyCode from "@/components/ClassroomCopyCode/ClassroomCopyCode";
 
 const Engineering = () => {
   const departmentName = "engineering";
@@ -14,9 +15,15 @@ const Engineering = () => {
       <div className={styles.banner}>
         <AppBanner title={departmentName} imageURL={engBanner} />
       </div>
-      <p className="mt-4 ml-4">
+      <p
+        className="mt-4 ml-4"
+        style={{
+          fontSize: "24px",
+        }}
+      >
         <strong>Weekly Meeting</strong>: Thursdays at Lunch (11:40-12:40) in
         room 256
+        <ClassroomCopyCode code="MADOGHZ" />
       </p>
 
       <div className={styles.announcementsContainer + "container lg"}>

@@ -1,22 +1,23 @@
 import React from "react";
 import LandingPageBanner from "@/components/LandingPageComponents/Banner/Banner";
 import Slideshow from "@/components/Slideshow/Slideshow";
-// import square from "../../public/square.png";
 import { Event } from "@/types/Event";
-import bioEvents from "./biology/biologyEvents";
+/*import bioEvents from "./biology/biologyEvents";
 import chemEvents from "./chemistry/chemistryEvents";
 import wisEvents from "./women-in-stem/WISEvents";
 import physicsEvents from "./physics/physicsDepartmentEvents";
 import engineeringEvents from "./engineering/engineeringDepartmentSlides";
-import dsEvents from "./data-science/dataScienceEvents";
+import dsEvents from "./data-science/dataScienceEvents";*/
+import { miscellaneousEvents } from "./miscellaenousEvents";
 
 const Home = () => {
-  const slides = bioEvents
+  const slides = miscellaneousEvents;
+  /*bioEvents
     .concat(chemEvents)
     .concat(wisEvents)
     .concat(physicsEvents)
     .concat(engineeringEvents)
-    .concat(dsEvents);
+    .concat(dsEvents);*/
 
   slides.sort((d) => Date.now() - Date.parse(d.date));
 
