@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import { FaRegCopy } from "react-icons/fa";
 import { FaCopy } from "react-icons/fa";
