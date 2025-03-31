@@ -44,10 +44,10 @@ const Home = () => {
   updateEventStatus();
 
   return (
-    <div>
+    <>
       <LandingPageBanner />
       <Slideshow slides={slides} title="Upcoming events" />
-    </div>
+    </>
   );
 };
 
