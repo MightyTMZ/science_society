@@ -9,6 +9,8 @@ import physicsEvents from "./physics/physicsDepartmentEvents";
 import engineeringEvents from "./engineering/engineeringDepartmentSlides";
 import dsEvents from "./data-science/dataScienceEvents";*/
 import { miscellaneousEvents } from "./miscellaenousEvents";
+import NewsShow from "@/components/NewsShow/NewsShow";
+import { sampleNews } from "@/data/news";
 
 const Home = () => {
   const slides = miscellaneousEvents;
@@ -47,6 +49,7 @@ const Home = () => {
     <>
       <LandingPageBanner />
       <Slideshow slides={slides} title="Upcoming events" />
+      <NewsShow slides={sampleNews} title="News" />
     </>
   );
 };
