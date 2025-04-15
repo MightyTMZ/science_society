@@ -17,7 +17,7 @@ const WomenInSTEM = () => {
       <p className="mt-4 ml-4"><strong>Weekly Meeting</strong>: Bi-weekly (every two weeks) Fridays at Lunch (11:40-12:40) in room 253</p>
 
       <div className={styles.announcementsContainer + "container lg"}>
-        <Slideshow title="Events" slides={slides} />
+        <Slideshow title="News" slides={slides} />
       </div>
       <div className={styles.calendarContainer}>
         <h1 className={styles.calendarHeading}>

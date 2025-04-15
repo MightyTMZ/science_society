@@ -28,7 +28,7 @@ const Physics = () => {
       </p>
 
       <div className={styles.announcementsContainer + "container lg"}>
-        <Slideshow title="Events" slides={slides} />
+        <Slideshow title="News" slides={slides} />
       </div>
       <div className={styles.calendarContainer}>
         <h1 className={styles.calendarHeading}>

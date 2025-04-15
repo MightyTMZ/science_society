@@ -37,7 +37,7 @@ const Biology = () => {
       </p>
 
       <div className={styles.announcementsContainer + "container lg"}>
-        <Slideshow title="Events" slides={biologyEvents} />
+        <Slideshow title="News" slides={biologyEvents} />
       </div>
       <div className={styles.calendarContainer}>
         <h1 className={styles.calendarHeading}>
