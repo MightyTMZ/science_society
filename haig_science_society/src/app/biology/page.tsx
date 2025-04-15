@@ -1,6 +1,6 @@
 import React from "react";
 import AppBanner from "@/components/Banner/Banner";
-import BioBanner from "../../../public/departmentBannerImages/biology.webp";
+import BioBanner from "../../../public/departmentBannerImages/biology2.jpg";
 import Slideshow from "@/components/Slideshow/Slideshow";
 import Calendar from "@/components/Calendar/Calendar";
 import biologyEvents from "./biologyEvents";
