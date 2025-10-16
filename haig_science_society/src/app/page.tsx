@@ -40,7 +40,7 @@ export default function Home() {
               About Us
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Science Society is Earl Haig's hub for exploring science beyond the classroom. We bring together
+              Science Society is Earl Haig&apos;s hub for exploring science beyond the classroom. We bring together
               students interested in biology, chemistry, physics, engineering, and more through hands-on labs,
               contests, workshops, and collaborations with other clubs.
             </p>

@@ -1,12 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { departments } from "./departments";
-import { MdHome, MdOutlineScience } from "react-icons/md";
-import { MdEngineering } from "react-icons/md";
-import { GiCatapult } from "react-icons/gi";
+import { MdHome } from "react-icons/md";
 import Link from "next/link";
-import { FaDna } from "react-icons/fa";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
