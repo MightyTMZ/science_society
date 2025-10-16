@@ -34,17 +34,9 @@ const Footer = () => {
         </Link>
       </div>
       <p className={styles.disclaimer}>
-        Designed by <strong>Angela Ho</strong> <br />
         Built by{" "}
         <strong>
-          {/* TDSB wiFi doesn't block this location of my site*/}
-          <Link
-            href="https://tomzhanginfo.vercel.app/"
-            className={styles.externalPortfolio}
-          >
             Tom Zhang
-          </Link>{" "}
-          & Daniel Rayati
         </strong>
       </p>
     </footer>

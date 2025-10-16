@@ -28,7 +28,7 @@ const ClassroomCopyCode = ({ code }: Props) => {
         {copied ? (
           <span style={{ display: "inline-flex" }}>
             <FaCopy />{" "}
-            <span className="text-green-600" style={{ fontSize: "16px" }}>
+            <span className="text-white-600" style={{ fontSize: "16px" }}>
               &nbsp;Copied!
             </span>
           </span>

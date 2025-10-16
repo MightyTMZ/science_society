@@ -28,10 +28,10 @@ const NavBar = () => {
           }}
         >
           <Link href="/" className="px-5 "><MdHome /></Link>
-          <Link href="/chemistry" className="px-5 "><MdOutlineScience /></Link>
+          {/* <Link href="/chemistry" className="px-5 "><MdOutlineScience /></Link>
           <Link href="/physics" className="px-5 "><GiCatapult /></Link>
           <Link href="/engineering" className="px-5 "><MdEngineering /></Link>
-          <Link href="/biology" className="px-5 "><FaDna /></Link>
+          <Link href="/biology" className="px-5 "><FaDna /></Link> */}
         </div>
 
         {/* Hamburger Menu */}
@@ -56,7 +56,7 @@ const NavBar = () => {
         </button>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden lg:flex space-x-6">
+        {/* <div className="hidden lg:flex space-x-6">
           {departments.map((department) => (
             <a
               key={department.id}
@@ -66,11 +66,11 @@ const NavBar = () => {
               {department.name}
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Mobile Navigation Links */}
-      <div className={`lg:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}>
+      {/* <div className={`lg:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}>
         {departments.map((department) => (
           <a
             key={department.id}
@@ -80,7 +80,7 @@ const NavBar = () => {
             {department.name}
           </a>
         ))}
-      </div>
+      </div> */}
     </nav>
   );
 };
