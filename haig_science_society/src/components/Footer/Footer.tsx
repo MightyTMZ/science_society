@@ -33,12 +33,12 @@ const Footer = () => {
           <span>Email</span>
         </Link>
       </div>
-      <p className={styles.disclaimer}>
+      {/* <p className={styles.disclaimer}>
         Built by{" "}
         <strong>
             Tom Zhang
         </strong>
-      </p>
+      </p> */}
     </footer>
   );
 };
