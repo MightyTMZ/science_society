@@ -1,8 +1,7 @@
-"use client";
-
 import React from "react";
 import ClassroomCopyCode from "@/components/ClassroomCopyCode/ClassroomCopyCode";
 import { FaFlask, FaGraduationCap, FaUsers, FaTrophy } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,6 +30,16 @@ export default function Home() {
            </div>
         </div>
 
+        <div className="my-6 mx-3 inline-block group relative">
+          <Link
+            href="https://20242025-earlhaigsciencesociety.vercel.app/"
+            className="relative text-blue-400 font-semibold transition duration-300
+                      group-hover:text-blue-300"
+          >
+            2024-2025 website
+          </Link>
+        </div>
+        
         {/* Main Content */}
         <div className="max-w-4xl mx-auto">
           {/* About Section */}

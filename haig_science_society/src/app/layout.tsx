@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Head from "next/head";
 import { Geist, Geist_Mono, Bebas_Neue } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import { Poppins } from "next/font/google";
@@ -33,7 +32,7 @@ const bebas_neue = Bebas_Neue({
 export const metadata: Metadata = {
   title: "Earl Haig Science Society",
   description:
-    "Here for Earl Haig STEM Opportunities, Labs, & Contest Help🥼🔬",
+    "Here for Earl Haig STEM Opportunities, Labs, & Contest Help 🥼🔬",
 };
 
 export default function RootLayout({
@@ -43,9 +42,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.jpg" sizes="any" />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${bebas_neue.variable} antialiased`}
       >
