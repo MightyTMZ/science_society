@@ -32,7 +32,17 @@ const bebas_neue = Bebas_Neue({
 export const metadata: Metadata = {
   title: "Earl Haig Science Society",
   description:
-    "Here for Earl Haig STEM Opportunities, Labs, & Contest Help 🥼🔬",
+    "Here for Earl Haig STEM Opportunities, Outreach, Contests, and more! 🥼🔬",
+  openGraph: {
+    images: [
+      {
+        url: "https://earlhaigsciencesociety.com/og-images/sci_soc_ogi.png",
+        width: 1120,
+        height: 630,
+        alt: "Earl Haig Science Society - 2025/26",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
