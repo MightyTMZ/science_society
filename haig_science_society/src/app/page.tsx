@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import ClassroomCopyCode from "@/components/ClassroomCopyCode/ClassroomCopyCode";
-import { FaFlask, FaGraduationCap, FaUsers, FaTrophy, FaCalendarAlt, FaBook } from "react-icons/fa";
+import { FaFlask, FaUsers, FaTrophy, FaCalendarAlt, FaBook } from "react-icons/fa";
 import Link from "next/link";
 import UpcomingEvents from "@/components/LandingPageComponents/UpcomingEvents/UpcomingEvents";
 
