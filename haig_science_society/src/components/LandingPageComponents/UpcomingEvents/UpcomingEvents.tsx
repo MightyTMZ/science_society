@@ -30,7 +30,7 @@ const events: Event[] = [
     time: "11:45 AM to 12:35 PM",
     location: "Room 353",
     signUpInfo:
-      "https://forms.gle/64ixL5BMJdStzpfTA. More information about it can be found in the Science Society google classroom code: qfz72fa",
+      "https://forms.gle/64ixL5BMJdStzpfTA   More information about it can be found in the Science Society google classroom code: qfz72fa",
   },
   {
     title: "Science Fair Workshops",
